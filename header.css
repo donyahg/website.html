@@ -1,0 +1,17 @@
+header{
+    padding: 100 px 25 px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+.header_text{
+    width: 850 px;
+
+}
+.circle{
+    height: 600 px;
+    width: 600 px;
+    overflow: hidden;
+    border-radius: 50 %;
+    border: 20 px solid var (--main-brand-color);
+}
