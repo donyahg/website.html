@@ -1,0 +1,42 @@
+:root{
+    --main-brand-color: #297AE3;
+    --primary-color: #15171C;
+    --secondary-color: #232933;
+    --light-secondary-color: #2E3744;
+    --text-color: white;
+    --secondary-text-color: #b3b4b6;
+ 
+ }
+ body{
+    background-color: #15171C;
+    font-family: sans-serif;
+    color: aliceblue;
+    font-size: x-large;
+ }
+ nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+ }
+ nav a{
+    color: var(--secondary-text-colorcolor);
+    text-decoration: none;
+    position: relative;
+ }
+nav a:hover{
+    color:var(--text-color);
+}
+nav a::after{
+   content: '' ; 
+    height: 2px;
+    width: 0;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-out;
+    position: absolute;
+}
+nav a:hover::after{
+    width: 100%;
+}
